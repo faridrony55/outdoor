@@ -1,0 +1,309 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+body{
+
+}
+
+img{
+	max-width: 100%;
+	display: block;
+}
+li{
+	list-style: none;
+}
+
+.container{
+	width: 1000px;
+	margin: auto;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header{
+
+background: #212121c2 url(../images/nature.jpg);
+
+background-repeat: no-repeat;
+
+min-height: 600px;
+
+background-size: cover;
+
+background-position: bottom;
+
+background-blend-mode: multiply;
+
+padding-top: 20px;
+
+position: relative;
+
+background-attachment: fixed;
+}
+.logo{flex-basis: 20%;max-width: 20%;}
+.logo h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.logo h1 span{
+    font-weight: 100;
+    display: block;
+    font-size: 17px;
+}
+nav{
+    flex-basis: 80%;
+    max-width: 80%;
+    /* background: red; */
+}
+nav ul{
+    justify-content: flex-end;
+}
+nav ul li{}
+nav ul li a{
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all 0.4s cubic-bezier(0.49, 0.9, 0, 1.31);
+}
+nav ul li a:hover{
+    border: 2px solid;
+} 
+ 
+ nav ul li:last-child a{
+
+    border: 2px solid;
+ }
+
+
+ .banner-content{
+    color: #fff;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    -moz-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+}
+ .banner-content h6{
+    font-size: 20px;
+    font-style: italic;
+}
+ .banner-content span{
+    width: 100px;
+    height: 5px;
+    background: #FB2056;
+    display: block;
+    margin: 10px auto 5px;
+}
+ .banner-content h1{
+    font-size: 5em;
+    text-transform: uppercase;
+}
+ .more{
+    background: #FB2056;
+    color: #fff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+
+
+.testimonial-section{
+	background-color: #F5F6F9;
+	padding: 50px 0;
+	text-align: center;
+	color: #8C949C;
+}
+.testimonial-section .container{
+	position: relative;
+}
+.testimonial-section img{
+    position: absolute;
+    left: 10%;
+    bottom: 50%;
+    -moz-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+}
+
+.testimonial-section h2{
+    font-weight: 600;
+    margin-top: 20px;
+}
+.testimonial-section h3{
+    font-size: 26px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+.event-section{
+    padding: 100px 0;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.heading h1{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.heading span{
+    background: #fb2056;
+    width: 80px;
+    height: 3px;
+    display: block;
+    margin: auto;
+}
+.events{
+    max-width: 50%;
+    flex-basis: 50%;
+    padding: 30px;
+    text-align: center;
+}
+.events img{
+    border-radius: 10px;
+    box-shadow: 13px 13px 0 -3px #EDEDED;
+    transition: all 0.4s ease-in-out;
+}
+.events:hover img{
+    box-shadow: -13px -13px 0 -3px #EDEDED;
+
+}
+.events h3{
+    margin: 20px 0 5px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.events p{
+    color: #8C949C;
+}
+.events a{ 
+    color: #fb2056; 
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 10px;
+    letter-spacing: 3px; 
+}
+
+.events a:hover{  
+}
+.events a i{
+	transition: all 0.4s ease;
+}
+.events a:hover i{
+	
+transform: translateX(10px);
+}
+
+
+.explore-section{
+    background: #0009 url(../images/landscape-615429_1280.jpg);
+    /* height: 500px; */
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.explore-section .flex{
+    justify-content: flex-end;
+    align-items: center;
+    height: 500px;
+}
+.explore-content{
+    color: #fff;
+    max-width: 50%;
+    flex-basis: 50%;
+    padding-right: 80px;
+}
+.explore-content h1{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.explore-content span{
+    background: #fb2056;
+    width: 80px;
+    height: 3px;
+    display: block;
+    margin: 15px 0;
+}
+.explore-content p{
+    margin-bottom: 20px;
+}
+.explore-content a{
+
+    color: #fff; 
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 10px;
+    letter-spacing: 3px; 
+}
+.explore-content a i{
+
+	transition: all 0.4s ease;
+}
+.explore-content a:hover i{
+	
+transform: translateX(10px);
+}
+
+
+.tours-section{
+	padding: 100px 0;
+}
+.tour{
+	max-width: 33.33%;
+	flex-basis: 33.33%;
+	padding: 10px;
+}
+.tour h1{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.tour span{
+    background: #fb2056;
+    width: 80px;
+    height: 3px;
+    display: block;
+    margin: 15px 0;
+}
+.tour p{
+    margin-bottom: 20px;
+}
+.tour img{
+    padding-bottom: 20px;
+}
+
+.tours-section .tour:first-child{
+	padding-right: 30px;
+}
+
+.align-center{
+	align-items: center;
+}
+.align-end{
+	align-items: flex-end;
+}
+
+ 
